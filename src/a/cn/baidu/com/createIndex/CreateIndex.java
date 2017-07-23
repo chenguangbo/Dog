@@ -40,6 +40,7 @@ public class CreateIndex {
 			doc.add(new TextField("pic", book.getPic(),Store.YES));
 			doc.add(new TextField("description",book.getDescription(),Store.YES));
 			docList.add(doc);
+			
 		}
 		// 3.创建分词器
 		Analyzer an = new IKAnalyzer();
